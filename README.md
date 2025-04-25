@@ -65,3 +65,44 @@ INTRODUCTION
    - Set up basic configurations for a sample design (e.g., `picorv32a` or custom RTL)
 
 ## Screenshots
+![Screenshot (165)](https://github.com/user-attachments/assets/3f9c3893-23a6-4816-a63f-7cf9f9951fd0)
+![Screenshot (166)](https://github.com/user-attachments/assets/5f879a9d-eb5c-4f91-8f59-6a6d1d4fe56a)
+![Screenshot (169)](https://github.com/user-attachments/assets/37b1a835-7283-4aac-848a-422f4589dfac)
+![Screenshot (170)](https://github.com/user-attachments/assets/be83b202-d644-4d60-bac7-5b27cabd6cf9)
+![Screenshot (174)](https://github.com/user-attachments/assets/000342b5-4b87-46a0-a40d-90e58386ebd4)
+![Screenshot (179)](https://github.com/user-attachments/assets/715072fe-b2fc-4ad5-a851-a9fb4a8b6227)
+![Screenshot (180)](https://github.com/user-attachments/assets/a370dade-b40d-45d6-8d86-8b457b5a6ee4)
+
+## Lab- Screenshots
+![VirtualBox_vsdworkshop_25_04_2025_16_27_44](https://github.com/user-attachments/assets/810a5b5b-a325-482b-ac98-c558e8cff058)
+![VirtualBox_vsdworkshop_25_04_2025_16_31_06](https://github.com/user-attachments/assets/d070f21e-829d-4490-ad71-5211c336f46e)
+
+## Lab 1 - Task
+1)Run 'picorv32a' design synthesis using openLANE flow and generate necessary outputs.
+
+2) Calculate the flop ratio
+ = no.of d flipflops/total number of cells
+ 
+ Percentage of DFF'S=Flop Ratio*100
+
+ ## Result
+
+ Calculating  the flop ratio
+ = no.of d flipflops(1613)/total number of cells(14876)
+
+ 0.1084
+ 
+ Percentage of DFF'S=Flop Ratio*100
+ 
+ 10.84
+![VirtualBox_vsdworkshop_25_04_2025_16_33_35](https://github.com/user-attachments/assets/f7a3beff-5711-4080-a83d-00e4237ea32a)
+
+
+
+
+
+
+
+
+
+
