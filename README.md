@@ -154,7 +154,7 @@ INTRODUCTION
 
  3) Special cells ensure reliability, manufacturability, and electrical correctness
 
- 4)Placement quality directly impacts timing, congestion, and chip performance
+  4) Placement quality directly impacts timing, congestion, and chip performance
 
 💡 Reflection:
 
