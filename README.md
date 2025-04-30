@@ -160,6 +160,114 @@ INTRODUCTION
 
   Day 2 focused heavily on physical organization, setting the stage for successful routing and performance optimization later. Understanding LEF/DEF and seeing how physical rules are applied was eye-opening. Proper floorplanning and placement are critical to achieving good PPA (Power, Performance, Area) targets.
 
+## 🟢 Day 3: Standard Cell Design & Characterization
+
+---
+
+### 📘 Topics Covered:
+
+- Standard Cell Design using **Sky130 PDK**
+- Schematic creation and simulation using **Ngspice**
+- Understanding the structure and components of a standard cell (e.g., inverter)
+- Performing **SPICE simulation** to verify cell functionality
+- Introduction to **Standard Cell Characterization** (timing, power, functionality) 
+
+### 🔧 Activities Performed:
+
+1. **Designed a Standard Inverter Cell**  
+   - Created schematic in **Xschem** using Sky130 transistors  
+   - Connected PMOS and NMOS with appropriate sizing  
+   - Added VDD, GND, and input/output pins
+
+2. **Simulated the Cell using Ngspice**  
+   - Wrote `.spice` netlist for the inverter  
+   - Performed transient simulation to observe inverter switching behavior  
+   - Verified logic functionality (Vin vs Vout)
+
+3. **Started Cell Characterization**  
+   - Measured key timing parameters:
+     - Propagation delay (tpHL, tpLH)
+     - Rise/fall times
+     - Noise margins
+   - Optionally observed power consumption using waveform analysis
+
+## Screenshots
+  ![Screenshot (195)](https://github.com/user-attachments/assets/fa4e82cf-5c9f-4fe9-b3f7-6955ddba2afd)
+  ![Screenshot (196)](https://github.com/user-attachments/assets/a6e7347e-af0b-4f93-b064-7cb2fc8815fe)
+  ![Screenshot (197)](https://github.com/user-attachments/assets/9e5c2714-1d39-4eb2-bc70-6afb0096166d)
+
+## Lab- Screenshots
+![VirtualBox_vsdworkshop_30_04_2025_12_47_02](https://github.com/user-attachments/assets/7e454933-adc3-4e26-bd95-1770f0315761)
+![VirtualBox_vsdworkshop_30_04_2025_12_48_38](https://github.com/user-attachments/assets/0a0c49ea-1e3a-45fe-8497-4e9b0fc94c4e)
+![VirtualBox_vsdworkshop_30_04_2025_12_48_50](https://github.com/user-attachments/assets/b20ce51e-20e7-4dbf-9631-4cdf4fea0562)
+![VirtualBox_vsdworkshop_30_04_2025_13_17_12](https://github.com/user-attachments/assets/caab88e2-8b49-4351-9d7c-e77296cecae6)
+![VirtualBox_vsdworkshop_30_04_2025_14_52_47](https://github.com/user-attachments/assets/6c94aa87-0ebd-4e9c-b9a6-f8c2801bc46c)
+![VirtualBox_vsdworkshop_30_04_2025_14_53_58](https://github.com/user-attachments/assets/cd4b5f35-bc62-4722-b31a-b146bb7ad6da)
+![VirtualBox_vsdworkshop_30_04_2025_15_10_40](https://github.com/user-attachments/assets/d4ac48ad-134f-4765-924d-280961fb5364)
+![VirtualBox_vsdworkshop_30_04_2025_15_11_10](https://github.com/user-attachments/assets/b1536ce8-b5d2-4811-9ed5-d9ce6a7049ff)
+![VirtualBox_vsdworkshop_30_04_2025_15_13_06](https://github.com/user-attachments/assets/d151d9a8-d9e0-4777-a78a-250aa1b2f3f8)
+![VirtualBox_vsdworkshop_30_04_2025_15_14_56](https://github.com/user-attachments/assets/1fd1247f-fc6a-4e09-b849-8ef01d45018c)
+
+## LAB-TASK:
+
+Rise transition time calculation:
+
+Rise transition time = Time taken for output to rise to 80% − Time taken for output to rise to 20%
+
+20% of output = 660 mV
+80% of output = 2.64 V
+
+Rise transition time = 0.05868ns = 58.6ps
+
+Fall transition time calculation:
+
+Fall transition time = Time taken for output to fall to 20% − Time taken for output to fall to 80%
+
+20% of output = 660 mV
+80% of output = 2.64 V
+
+Fall transition time = 0.0735ns = 73.5ps
+
+Propagation delay calculation:
+propagation delay=0.03148ns=31.4ps
+![Screenshot (198)](https://github.com/user-attachments/assets/ef53f86a-78d2-41ff-ad42-e4ea7b956c56)
+
+![VirtualBox_vsdworkshop_30_04_2025_16_08_38](https://github.com/user-attachments/assets/3fbf6092-fb9a-49bd-8ec4-d7ce08791960)
+![VirtualBox_vsdworkshop_30_04_2025_16_08_46](https://github.com/user-attachments/assets/8dc30358-f851-4951-bf93-92d26f29ca65)
+![VirtualBox_vsdworkshop_30_04_2025_16_13_22](https://github.com/user-attachments/assets/f8036be9-19b5-4396-bceb-0a3e74c23184)
+
+📈 Output Observations:
+
+  V(in) and V(out) waveforms showed clear inversion behavior
+
+  Delays and transitions were dependent on transistor sizing and load
+
+  Learned how electrical characteristics of basic gates are extracted
+
+📌 Key Learnings:
+
+  Understood how standard cells are built from transistors using PDK models
+
+  Learned to validate circuit functionality with SPICE simulation
+
+  Gained insight into the critical parameters used for standard cell characterization
+
+ Recognized how these cells form the base for larger digital systems
+
+💡 Reflection:
+
+Day 3 shifted the focus to the analog foundation of digital design. Designing and simulating an inverter at the transistor level gave me a deeper appreciation for what goes inside a "standard cell". This hands-on experience with SPICE and Sky130 helped bridge the gap between digital abstraction and physical behavior.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
